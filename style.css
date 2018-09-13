@@ -1,0 +1,114 @@
+*{
+  box-sizing:border-box;
+}
+h1{
+  color:#07AAF5;
+  text-align:center;
+}
+a{
+  color:#07AAF5;
+}
+section{
+  display:flex;
+  justify-content:center;
+  text-align:center;
+}
+figure{
+  margin:0;
+}
+ol{
+  max-width:960px;
+  box-shadow: 0 0 4px 2px rgba(0,0,0,.5);
+  margin:0 auto;
+  display:flex;
+  list-style:none;
+}
+ol.portfolioList > li.item{
+  box-sizing: border-box;
+  width:32%;
+  height: 465px; 
+  margin-top: 60px;
+  margin-bottom: 40px;
+  margin-left: 1%;
+  border-radius: 5px;
+  padding:5px;
+  box-shadow: 0 -2px 2px 1px rgba(255, 255, 255, .8);
+  position: relative;
+}
+ol.portfolioList > li.item img{
+  width:100%;
+  border-radius: 5px;
+}
+ol.portfolioList > li.item *{
+  transition: all .3s;
+}
+ol.portfolioList > li.item > .figureTop{
+  box-sizing: border-box;
+  width:98%;
+  margin:1%;
+  height: 47%;
+  position: absolute;
+  top:0;
+  left:0;
+  z-index:1;
+}
+ol.portfolioList > li.item.active > .figureTop{
+  background: #07AAF5;
+  opacity: .5;
+  border-radius:10px;
+}
+ol.portfolioList > li.item figure{
+}
+ol.portfolioList > li.item figure.active{
+}
+ol.portfolioList > li.item figcaption{
+  height: auto;
+}
+ol.portfolioList > li.item figcaption h3{
+  color: #000;
+  margin: 10px;
+}
+ol.portfolioList > li.item figcaption .portfolio-links{
+  top: 40%; 
+  margin: 0 auto;
+  color: #07AAF5;
+  text-align: center;
+}
+ol.portfolioList > li.item figcaption .portfolio-keywords{
+  color: #000;
+  position: absolute;
+  padding:3px 1px;
+  top: 70%;
+  left: 0;
+  right: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+ol.portfolioList > li.item figcaption .portfolio-details{
+  background: rgba(0,0,0,.1);
+  padding:3px 1px;
+  color: #000;
+  position: absolute;
+  top:15%;
+  left:0;
+  right:0;
+  margin:0 auto;
+  opacity: 0;
+  z-index: 1;
+}
+ol.portfolioList > li.item figure.active .portfolio-keywords{
+  top: -65px;
+  color:#000;
+  font-weight: bold;
+  z-index: 1;
+}
+ol.portfolioList > li.item figure.active h3{
+  margin:5px;
+}
+ol.portfolioList > li.item figure.active .portfolio-links{
+  top:30%;
+}
+ol.portfolioList > li.item figure.active .portfolio-details{
+  top:65%;
+  opacity: 1;
+}
